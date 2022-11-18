@@ -1,0 +1,27 @@
+.btn {
+  width: 100%;
+  border: 3px solid black;
+  background: none;
+  aspect-ratio: 1 / 1;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.btn.active {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}
+
+.btn.inactive {
+  opacity: 0.3;
+}
+/* :not(:disabled) means the functionality we have issued here in between the curly brackets wont wont when the buttons are disabled.  */
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  /* hsl(hue, saturation, lightness) Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. Saturation is a percentage value. */
+  background-color: hsl(200, 100%, 75%);
+}

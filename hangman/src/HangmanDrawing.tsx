@@ -87,10 +87,11 @@ const LEFT_LEG = (
 
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
+// on TypeScript, props are not passed in like in JSX. instead they are passed in as shown below
 type HangmanDrawingProps = {
   numberOfGuesses: number;
 };
-
+// on TypeScript, props are not passed in like in JSX. instead they are passed in as shown below
 export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (
     <div style={{ position: "relative" }}>
